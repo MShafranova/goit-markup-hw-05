@@ -608,15 +608,31 @@ background: rgba(46, 47, 66, 0.7);
   justify-content: center;
   align-items: center;
 
+  transition-property: backgroung-color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
+
   width: 24px;
   height: 24px;
   border-radius: 50%;
   
-  background: var(--color-cornflower);
+  background-color: var(--color-cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+
+  background-color: var(--color-ocean);
 }
 .modal-close-icon {
   fill: var(--color-navy-blue);
+  transition-property: fill;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
+}
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  fill: var(--color-white);
 }
 
 
